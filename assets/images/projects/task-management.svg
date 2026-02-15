@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .task-item { transition: transform 0.3s, fill 0.3s; }
+        .task-item:hover { transform: translateX(10px); fill: #E3F2FD; }
+        .checkbox { transition: fill 0.3s; }
+        .checkbox:hover { fill: #50E3C2; }
+        .progress-bar { transition: width 1s ease-in-out; }
+        .add-button { transition: transform 0.3s; }
+        .add-button:hover { transform: scale(1.1); }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .add-button {
+            animation: pulse 2s infinite;
+        }
+    </style>
+    
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8F9FA"/>
+    
+    <!-- Task List -->
+    <rect x="200" y="100" width="400" height="400" fill="#FFFFFF" stroke="#4A90E2" stroke-width="2" rx="10"/>
+    
+    <!-- Task Items -->
+    <rect class="task-item" x="250" y="150" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    <rect class="task-item" x="250" y="200" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    <rect class="task-item" x="250" y="250" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    
+    <!-- Checkboxes -->
+    <circle class="checkbox" cx="280" cy="170" r="10" fill="#4A90E2"/>
+    <circle class="checkbox" cx="280" cy="220" r="10" fill="#4A90E2"/>
+    <circle class="checkbox" cx="280" cy="270" r="10" fill="#4A90E2"/>
+    
+    <!-- Progress Bar -->
+    <rect x="250" y="350" width="300" height="20" fill="#E3F2FD" rx="10"/>
+    <rect class="progress-bar" x="250" y="350" width="200" height="20" fill="#4A90E2" rx="10"/>
+    
+    <!-- Add Task Button -->
+    <circle class="add-button" cx="700" cy="500" r="40" fill="#4A90E2"/>
+    <path d="M690 500 L710 500 M700 490 L700 510" stroke="#FFFFFF" stroke-width="4"/>
+</svg> 

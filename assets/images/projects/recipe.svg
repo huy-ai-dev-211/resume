@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .recipe-item { transition: transform 0.3s, fill 0.3s; }
+        .recipe-item:hover { transform: translateX(10px); fill: #E3F2FD; }
+        .ingredient-dot { transition: fill 0.3s; }
+        .ingredient-dot:hover { fill: #50E3C2; }
+        .utensil { transition: transform 0.3s; }
+        .utensil:hover { transform: rotate(15deg); }
+        @keyframes countdown {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .timer {
+            animation: countdown 1s infinite;
+        }
+    </style>
+    
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8F9FA"/>
+    
+    <!-- Recipe Book -->
+    <rect x="200" y="100" width="400" height="400" fill="#FFFFFF" stroke="#4A90E2" stroke-width="2" rx="10"/>
+    
+    <!-- Recipe Content -->
+    <rect class="recipe-item" x="250" y="150" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    <rect class="recipe-item" x="250" y="200" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    <rect class="recipe-item" x="250" y="250" width="300" height="40" fill="#E3F2FD" rx="5"/>
+    
+    <!-- Ingredients -->
+    <circle class="ingredient-dot" cx="280" cy="170" r="5" fill="#4A90E2"/>
+    <circle class="ingredient-dot" cx="280" cy="220" r="5" fill="#4A90E2"/>
+    <circle class="ingredient-dot" cx="280" cy="270" r="5" fill="#4A90E2"/>
+    
+    <!-- Cooking Utensils -->
+    <path class="utensil" d="M500 150 L550 200" stroke="#F5A623" stroke-width="4"/>
+    <path class="utensil" d="M520 170 L570 220" stroke="#F5A623" stroke-width="4"/>
+    
+    <!-- Timer -->
+    <circle class="timer" cx="600" cy="400" r="40" fill="#50E3C2"/>
+    <text x="580" y="410" font-family="Arial" font-size="24" fill="#FFFFFF">30</text>
+</svg> 

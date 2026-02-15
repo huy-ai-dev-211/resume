@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .sun-ray { transition: stroke-width 0.3s; }
+        .sun-ray:hover { stroke-width: 6; }
+        .cloud { transition: transform 0.3s; }
+        .cloud:hover { transform: translateX(10px); }
+        .temp-display { transition: fill 0.3s; }
+        .temp-display:hover { fill: #F5A623; }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .sun {
+            animation: rotate 20s linear infinite;
+        }
+    </style>
+    
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8F9FA"/>
+    
+    <!-- Sun -->
+    <g class="sun">
+        <circle cx="400" cy="150" r="60" fill="#F5A623"/>
+        <path class="sun-ray" d="M400 50 L400 250" stroke="#F5A623" stroke-width="4"/>
+        <path class="sun-ray" d="M250 150 L550 150" stroke="#F5A623" stroke-width="4"/>
+    </g>
+    
+    <!-- Clouds -->
+    <path class="cloud" d="M200 200 C220 180 240 180 260 200 C280 180 300 180 320 200" stroke="#4A90E2" stroke-width="4" fill="none"/>
+    <path class="cloud" d="M500 200 C520 180 540 180 560 200 C580 180 600 180 620 200" stroke="#4A90E2" stroke-width="4" fill="none"/>
+    
+    <!-- Temperature Display -->
+    <rect class="temp-display" x="300" y="300" width="200" height="100" fill="#FFFFFF" stroke="#4A90E2" stroke-width="2" rx="10"/>
+    <text x="350" y="370" font-family="Arial" font-size="48" fill="#2C3E50">72°F</text>
+    
+    <!-- Weather Details -->
+    <rect x="200" y="450" width="400" height="100" fill="#E3F2FD" rx="10"/>
+    <text x="250" y="500" font-family="Arial" font-size="24" fill="#2C3E50">Humidity: 65%</text>
+    <text x="450" y="500" font-family="Arial" font-size="24" fill="#2C3E50">Wind: 8 mph</text>
+</svg> 

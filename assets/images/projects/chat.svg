@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .message-bubble { transition: transform 0.3s, fill 0.3s; }
+        .message-bubble:hover { transform: translateY(-5px); }
+        .message-bubble.user { transition: fill 0.3s; }
+        .message-bubble.user:hover { fill: #50E3C2; }
+        .message-bubble.other { transition: fill 0.3s; }
+        .message-bubble.other:hover { fill: #4A90E2; }
+        .avatar { transition: transform 0.3s; }
+        .avatar:hover { transform: scale(1.1); }
+        @keyframes typing {
+            0% { width: 0; }
+            100% { width: 500px; }
+        }
+        .input-field {
+            animation: typing 2s infinite;
+        }
+    </style>
+    
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8F9FA"/>
+    
+    <!-- Chat Window -->
+    <rect x="100" y="100" width="600" height="400" fill="#FFFFFF" stroke="#4A90E2" stroke-width="2" rx="10"/>
+    
+    <!-- Message Bubbles -->
+    <rect class="message-bubble other" x="150" y="150" width="200" height="60" fill="#E3F2FD" rx="30"/>
+    <rect class="message-bubble user" x="450" y="150" width="200" height="60" fill="#4A90E2" rx="30"/>
+    <rect class="message-bubble other" x="150" y="250" width="200" height="60" fill="#E3F2FD" rx="30"/>
+    <rect class="message-bubble user" x="450" y="250" width="200" height="60" fill="#4A90E2" rx="30"/>
+    
+    <!-- User Avatars -->
+    <circle class="avatar" cx="120" cy="180" r="20" fill="#50E3C2"/>
+    <circle class="avatar" cx="680" cy="180" r="20" fill="#F5A623"/>
+    
+    <!-- Input Field -->
+    <rect class="input-field" x="150" y="500" width="500" height="50" fill="#FFFFFF" stroke="#4A90E2" stroke-width="2" rx="25"/>
+    <circle cx="650" cy="525" r="20" fill="#4A90E2"/>
+    <path d="M640 525 L660 525" stroke="#FFFFFF" stroke-width="4"/>
+</svg> 

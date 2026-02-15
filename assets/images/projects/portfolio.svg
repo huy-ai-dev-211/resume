@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .portfolio-item { transition: transform 0.3s, filter 0.3s; }
+        .portfolio-item:hover { transform: translateY(-10px); filter: drop-shadow(0 5px 5px rgba(0,0,0,0.2)); }
+        .nav-dot { transition: fill 0.3s; }
+        .nav-dot:hover { fill: #50E3C2; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .content-box {
+            animation: float 3s infinite;
+        }
+    </style>
+    
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8F9FA"/>
+    
+    <!-- Portfolio Layout -->
+    <rect class="portfolio-item" x="100" y="100" width="200" height="200" fill="#4A90E2" rx="10"/>
+    <rect class="portfolio-item" x="350" y="100" width="200" height="200" fill="#50E3C2" rx="10"/>
+    <rect class="portfolio-item" x="600" y="100" width="200" height="200" fill="#F5A623" rx="10"/>
+    
+    <!-- Content Placeholders -->
+    <rect class="content-box" x="120" y="120" width="160" height="160" fill="#FFFFFF" rx="5"/>
+    <rect class="content-box" x="370" y="120" width="160" height="160" fill="#FFFFFF" rx="5"/>
+    <rect class="content-box" x="620" y="120" width="160" height="160" fill="#FFFFFF" rx="5"/>
+    
+    <!-- Navigation -->
+    <rect x="100" y="350" width="600" height="50" fill="#2C3E50" rx="25"/>
+    <circle class="nav-dot" cx="200" cy="375" r="15" fill="#FFFFFF"/>
+    <circle class="nav-dot" cx="400" cy="375" r="15" fill="#FFFFFF"/>
+    <circle class="nav-dot" cx="600" cy="375" r="15" fill="#FFFFFF"/>
+    
+    <!-- Footer -->
+    <rect x="100" y="450" width="600" height="100" fill="#2C3E50" rx="10"/>
+    <text x="150" y="500" font-family="Arial" font-size="24" fill="#FFFFFF">Portfolio</text>
+</svg> 
