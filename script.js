@@ -16,6 +16,11 @@ themeToggle.addEventListener('click', () => {
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
+    
+    // Dispatch custom event for theme change
+    document.dispatchEvent(new CustomEvent('themeChanged', {
+        detail: { theme: newTheme }
+    }));
 });
 
 function updateThemeIcon(theme) {
@@ -146,14 +151,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form Submission
-const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
-});
 
 // Scroll Animation
 const observerOptions = {
@@ -169,7 +166,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.hero-content, .about-content, .project-grid, .cert-grid, .contact-content').forEach(section => {
+document.querySelectorAll('.hero-content, .about-content, .project-grid, .cert-grid').forEach(section => {
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
     section.style.transition = 'all 0.6s ease-out';

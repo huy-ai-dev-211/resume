@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huy Van - Full Stack Engineer</title>
+    <meta name="description" content="Huy Pham Van - Full Stack Engineer with 10+ years of experience in web development, system optimization, and AI integrations. Specialized in React, Node.js, Python, Django, and cloud technologies.">
+    <meta name="keywords" content="Full Stack Engineer, Web Developer, React, Node.js, Python, Django, AWS, Software Engineer">
+    <meta name="author" content="Huy Pham Van">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Huy Pham Van - Full Stack Engineer">
+    <meta property="og:description" content="Full Stack Engineer with 10+ years of experience in web development & system optimization">
+    <meta property="og:image" content="assets/images/profile.jpeg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Huy Pham Van - Full Stack Engineer">
+    <meta name="twitter:description" content="Full Stack Engineer with 10+ years of experience in web development & system optimization">
+    
+    <title>Huy Pham Van - Full Stack Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <div class="logo">KH</div>
+                <a href="#home" class="logo">
+                    <img src="assets/images/logo2.png" alt="Huy Pham Van Logo">
+                </a>
                 <div class="nav-right">
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#certifications">Certifications</a></li> -->
                     </ul>
                     <button class="theme-toggle" aria-label="Toggle theme">
                         <i class="fas fa-moon"></i>
@@ -38,18 +53,18 @@
     <section id="home" class="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Huy Van</span></h1>
+            <h1>Hi, I'm <span class="highlight">Huy Pham Van</span></h1>
             <p class="tagline">Full Stack Engineer</p>
             <p class="subtitle">10+ Years of Experience in Web Development & System Optimization</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
-                <a href="#contact" class="btn secondary">Hire Me</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
             </div>
-            <div class="social-links">
+            <!-- <div class="social-links">
                 <a href="https://www.linkedin.com/in/kendrick-haymon-204a14351" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/furtivegod" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.hackerrank.com/profile/kendrickjhaymon1" target="_blank"><i class="fab fa-freelancer"></i></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -62,7 +77,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Kendrick Haymon">
+                    <img src="assets/images/profile.jpeg" alt="Huy Pham Van">
                 </div>
                 <div class="about-overview">
                     <p>I'm a practical and effective Full Stack Engineer with 10+ years of experience developing scalable web applications and optimizing system performance. My expertise spans front-end and back-end development, API architecture, cloud computing, and AI integrations.</p>
@@ -189,6 +204,9 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
+        <div class="cloud-layer projects-cloud-1"></div>
+        <div class="cloud-layer projects-cloud-2"></div>
+        <div class="cloud-layer projects-cloud-3"></div>
         <div class="container">
             <div class="section-header">
                 <h2>My Projects</h2>
@@ -201,62 +219,61 @@
     </section>
 
     <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
+    <!-- <section class="certifications" id="certifications">
         <div class="container">
             <div class="section-header">
                 <h2>Certifications</h2>
                 <p>Professional certifications and achievements in software development</p>
             </div>
-            <div class="cert-grid">
+            <div class="cert-grid"> -->
                 <!-- Certification cards will be dynamically inserted by JavaScript -->
-            </div>
+            <!-- </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Let's discuss how I can help with your next project</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>huyvan890211@gmail.com</p>
-                    </div>
-<!--                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (702) 674 8388</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Las Vegas, NV</p>
-                    </div> -->
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
-                    </div>
-                </form>
-                <div class="contact-actions">
-                    <button type="submit" class="btn primary">Send Message</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
+        <canvas id="footerCanvas"></canvas>
+        <div class="cloud-layer cloud-1"></div>
+        <div class="cloud-layer cloud-2"></div>
+        <div class="cloud-layer cloud-3"></div>
+        <div class="cloud-layer cloud-4"></div>
+        <svg class="footer-cloud-svg" viewBox="0 0 1557 213" width="1590" height="213" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M1331 165.5C1320.5 162.5 1311 112 1221.5 92.4999C1132 72.9999 1104.5 114 1093.5 112C1082.5 110 1052 6.04351 903.5 1.00011C771 -3.49989 732.5 90 722.5 92.4999C712.5 94.9998 647.5 54.0001 535.5 73.9999C423.5 93.9997 421.5 165.5 411.5 165.5C401.5 165.5 359 58.5001 203.5 49.4999C48 40.4998 0.5 136 0.5 209.5C0.5 283 62.5 309.5 62.5 309.5H100.5L1556.5 304.5V232.5C1556.5 215.5 1542.5 159.009 1464 145.5C1368.81 129.118 1341.5 168.5 1331 165.5Z" fill="currentColor"></path>
+        </svg>
+        <svg class="footer-rainbow-cloud-svg" viewBox="0 0 1557 213" width="1590" height="213" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M1331 165.5C1320.5 162.5 1311 112 1221.5 92.4999C1132 72.9999 1104.5 114 1093.5 112C1082.5 110 1052 6.04351 903.5 1.00011C771 -3.49989 732.5 90 722.5 92.4999C712.5 94.9998 647.5 54.0001 535.5 73.9999C423.5 93.9997 421.5 165.5 411.5 165.5C401.5 165.5 359 58.5001 203.5 49.4999C48 40.4998 0.5 136 0.5 209.5C0.5 283 62.5 309.5 62.5 309.5H100.5L1556.5 304.5V232.5C1556.5 215.5 1542.5 159.009 1464 145.5C1368.81 129.118 1341.5 168.5 1331 165.5Z" fill="currentColor"></path>
+        </svg>
+        <svg class="footer-bottom-cloud-svg" xmlns="http://www.w3.org/2000/svg" width="5120" height="600" fill="none" viewBox="0 0 5120 600" preserveAspectRatio="none">
+            <path fill="white" d="M2641.4 545.5C2613.31 543.999 2525.75 342 2121.01 342C1862 342 1840 408.5 1806.88 403.5C1773.77 398.499 1723.34 273.991 1562.17 280C1401 286.009 1366.58 457.5 1339 465C1311.42 472.5 1279 370.5 1034.79 378.5C802.99 386.093 724.297 462.5 697 457C669.703 451.5 681 219.9996 430.496 176.4996C214.304 138.958 99.7464 327.937 60.6394 410.475C51.4353 429.9 27.9703 439.392 8.5729 430.129C-15.3473 418.705 -43 436.144 -43 462.652V573.5C-43 587.859 -31.3592 599.5 -16.9999 599.5H5103C5127.3 599.5 5147 579.8 5147 555.5V376.89C5147 370.643 5146.46 364.404 5144.55 358.457C5136.92 334.729 5108.7 272.5 5022.5 272.5C4881 272.5 4935 397.704 4838.83 393C4808.16 391.499 4757.27 199.5004 4535 203C4312.73 206.4996 4283.98 414.5 4250.5 412.5C4217.02 410.5 4197 343 4037.27 333.5C3834.76 321.455 3790.86 429 3753.5 423C3716.14 417 3652.96 242.8238 3377.5 297.5C3156.46 341.374 3191.5 531.48 3139.82 520.5C3118.64 515.999 3078.5 483 2948.03 483C2894.2 483 2890.37 474.676 2837.19 483C2708.5 503.141 2669.5 547 2641.4 545.5Z"></path>
+        </svg>
         <div class="container">
-            <p>&copy; 2016 - 2026 Huy Van. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <p class="footer-description">Let's discuss how I can help with your next project</p>
+                    <a href="mailto:huyvan890211@gmail.com" class="footer-email">
+                        huyvan890211@gmail.com
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <!-- <h3>Connect</h3>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/kendrick-haymon-204a14351" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/furtivegod" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/kendrickjhaymon1" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
+                            <i class="fab fa-freelancer"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2016 - 2026 Huy Pham Van. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
@@ -266,102 +283,9 @@
     </button>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="canvas.js"></script>
     <script src="script.js"></script>
     <script src="certifications.js"></script>
-    <script>
-        // Three.js Background Animation
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({
-            canvas: document.querySelector('#hero-canvas'),
-            alpha: true,
-            antialias: true
-        });
-        
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
-
-        // Create particles
-        const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 2000;
-        const posArray = new Float32Array(particlesCount * 3);
-
-        for(let i = 0; i < particlesCount * 3; i++) {
-            posArray[i] = (Math.random() - 0.5) * 5;
-        }
-
-        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-
-        const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.005,
-            color: getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim(),
-            transparent: true,
-            opacity: 0.8,
-            blending: THREE.AdditiveBlending
-        });
-
-        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-        scene.add(particlesMesh);
-
-        camera.position.z = 2;
-
-        // Mouse movement effect
-        let mouseX = 0;
-        let mouseY = 0;
-        let targetX = 0;
-        let targetY = 0;
-
-        document.addEventListener('mousemove', (event) => {
-            mouseX = (event.clientX - window.innerWidth / 2) / 100;
-            mouseY = (event.clientY - window.innerHeight / 2) / 100;
-        });
-
-        // Click effect
-        document.addEventListener('click', () => {
-            const particles = particlesGeometry.attributes.position.array;
-            for(let i = 0; i < particles.length; i += 3) {
-                particles[i] += (Math.random() - 0.5) * 0.1;
-                particles[i + 1] += (Math.random() - 0.5) * 0.1;
-                particles[i + 2] += (Math.random() - 0.5) * 0.1;
-            }
-            particlesGeometry.attributes.position.needsUpdate = true;
-        });
-
-        // Animation
-        function animate() {
-            requestAnimationFrame(animate);
-
-            // Smooth mouse movement
-            targetX = mouseX;
-            targetY = mouseY;
-
-            particlesMesh.rotation.x += 0.001;
-            particlesMesh.rotation.y += 0.001;
-
-            // Mouse interaction
-            particlesMesh.rotation.x += targetY * 0.0001;
-            particlesMesh.rotation.y += targetX * 0.0001;
-
-            renderer.render(scene, camera);
-        }
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        // Start animation
-        animate();
-
-        // Theme change handler
-        document.addEventListener('themeChanged', function(e) {
-            const isDark = e.detail.theme === 'dark';
-            particlesMaterial.color.setStyle(isDark ? '#3b82f6' : '#2563eb');
-        });
-    </script>
+    <script src="footer-canvas.js"></script>
 </body>
 </html> 
